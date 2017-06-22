@@ -388,7 +388,7 @@ img {
   border: 2px solid;
   border-radius: 14px;
   padding: 8px;
-  width: 55%;
+  width: 49%;
   color: #fff;
   background-color: #de9e26;
 }
@@ -540,7 +540,7 @@ img {
 
 
 .wrapper {
-	height: 350px;
+	height: 430px;
 	position: relative;
 }
 .slider {
