@@ -41,7 +41,7 @@ img {
   .page-header__wrapper,
   .page-footer__wrapper {
     width: auto;
-    padding: 0 64px;
+    padding: 0 40px;
     margin: 0 auto;
   }
   .page-header__wrapper {
@@ -332,6 +332,17 @@ img {
     color: #fff;
     padding: 5px;
   }
+	.page-header__logo {
+		justify-content: center;
+		width: 28%;
+		padding-top: 3px;
+	}
+	.main-nav {
+		width: 100%;
+		position: absolute;
+		top: 73px;
+		box-shadow: 1px 1px 10px grey;
+	}
 }
 
 @media (min-width: 768px) and (min-width: 768px) {
@@ -413,6 +424,52 @@ img {
   width: 30px;
   height: 30px;
 }
+@media (min-width: 768px) {
+	.search-form {
+		width: 50%;
+	}
+	.search-btn {
+		top: 0;
+		width: 50px;
+		height: 30px;
+		background-color: none;
+		padding-top: 21px;
+		padding-bottom: 52px;
+		padding-left: 12px;
+	}
+	.search-form input {
+		top: 15px;
+		min-width: 96%;
+		background-color: #164f80;
+		padding-top: 9px;
+		padding-bottom: 10px;
+		padding-left: 18px;
+		margin-top: 0;
+	}
+}
+.page-main__description {
+	display: none;
+}
+.page-main__promo-description {
+	display: none;
+}
+@media (min-width: 768px) {
+	.page-main__description {
+		display: inline-block;
+		vertical-align: top;
+		width: 55%;
+		margin-top: 90px;
+		font-size: 14px;
+		margin-right: 25px;
+	}
+	.page-main__promo-description {
+		display: block;
+		padding: 0 100px;
+		font-size: 18px;
+		text-align: center;
+		margin-bottom: 50px;
+	}
+}
 .popup-login__btn {
   display: block;
   width: 100%;
@@ -435,14 +492,14 @@ img {
   background-color: #f6b431;
 }
 .login-popup {
-  width: 320px;
+  width: 300px;
   min-height: 210px;
   margin: 0 auto;
   background-color: rgb(52, 77, 113);
   color: #fff;
   position: relative;
   top: -50px;
-  left: -20px;
+  left: -28px;
   box-shadow: 1px 4px 10px grey;
   transition: 1s all;
 }
@@ -504,12 +561,32 @@ img {
   color: #83969f;
   background-color: #3a557c;
 }
+@media (min-width: 768px) {
+	.popup-login__btn {
+		display: none;
+	}
+	.login-popup {
+		width: 280px;
+		display: inline-block;
+		vertical-align: top;
+		margin-top: 111px;
+		position: static;
+		top: 0;
+		left: 0;
+	}
+	.login-close {
+		display: none;
+	}
+	.login-popup__form-btn {
+		margin-left: 0;
+	}
+}
 .site-content {
   margin-top: 30px;
-  border-top: 2px solid white;
-  padding-bottom: 30px;
-  border-bottom: 2px solid white;
+  /*border-top: 2px solid white;
+  border-bottom: 2px solid white;*/
   margin-bottom: 30px;
+	background-color: #f9f9f9;
 }
 .site-content__title a {
   display: block;
@@ -537,11 +614,12 @@ img {
   font-size: 15px;
   font-weight: bold;
 }
-
-
 .wrapper {
-	height: 430px;
+	height: 480px;
 	position: relative;
+	padding: 0 50px;
+	border-top: 1px dotted grey;
+	border-bottom: 1px dotted grey
 }
 .slider {
 	height: inherit;
@@ -558,9 +636,10 @@ img {
 	width: inherit;
 }
 .wrapper .controls {
-	left: 24%;
-  top: 93%;
+	left: 35%;
+  top: 88%;
 	position: absolute;
+	z-index: 3;
 }
 .wrapper label:after {
 	border: 2px solid #164f80;
@@ -629,9 +708,63 @@ img {
 	-o-transform: scale(1);
 	transform: scale(1);
 }
-
-
-
+@media (min-width: 768px) {
+	.wrapper {
+		height: 500px;
+	}
+	.slider {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	.slides {
+		position: static;
+		opacity: unset;
+		width: 31%;
+		border-right: 1px dotted grey;
+		margin-top: 40px;
+	}
+	.slides:last-child {
+		border-right: none;
+	}
+	.wrapper .controls {
+		display: none;
+	}
+}
+.advanced-topics {
+	display: none;
+}
+@media (min-width:768px) {
+	.advanced-topics {
+		display: flex;
+		flex-wrap: wrap;
+		/*justify-content: space-between;*/
+		background-color: white;
+		padding: 0;
+		margin-bottom: 50px;
+	}
+	.advanced-topics__item {
+		width: 33.33%;
+		min-height: 145px;
+		padding: 0 30px;
+		background-color: #1e558499
+	}
+	.advanced-topics__item:nth-child(2n) {
+		background-color: #0f3556;
+	}
+	.advanced-topics__item-title a {
+		display: block;
+		font-size: 14px;
+		text-decoration: none;
+		color: black;
+	}
+	.advanced-topics__item-title a:hover {
+		color: #a4a0a0;
+	}
+	.advanced-topics__item-text {
+		font-size: 13px;
+	}
+}
 
 
 
