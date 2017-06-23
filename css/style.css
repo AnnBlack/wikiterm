@@ -798,7 +798,7 @@ img {
 		width: 33.33%;
 		min-height: 145px;
 		padding: 0 30px;
-		background-color: #1e558499
+		background-color: rgba(30, 81, 125, 0.58);
 	}
 	.advanced-topics__item:nth-child(2n) {
 		background-color: #0f3556;
