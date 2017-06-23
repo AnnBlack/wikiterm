@@ -74,11 +74,17 @@ img {
     padding: 0 50px;
     margin: 0 auto;
   }
+	.page-main__wrapper--color {
+		background-color: #f6b431;
+		padding-bottom: 30px;
+		width: 1200px;
+	}
 }
 .page-header,
 .page-footer {
   min-width: auto;
   background-color: #164f80;
+	font-weight: 100;
 }
 .page-header__logo {
   display: -webkit-box;
@@ -517,6 +523,12 @@ img {
 		margin-bottom: 50px;
 	}
 }
+@media (min-width: 1200px) {
+	.page-main__description {
+		font-size: 18px;
+		font-weight: 100;
+	}
+}
 .popup-login__btn {
   display: block;
   width: 100%;
@@ -542,7 +554,7 @@ img {
 }
 .login-popup {
   width: 300px;
-  min-height: 210px;
+  min-height: 226px;
   margin: 0 auto;
   background-color: rgb(52, 77, 113);
   color: #fff;
@@ -606,8 +618,11 @@ img {
   -webkit-transition: 1.5s all;
   transition: 1.5s all;
   font-size: 17px;
-  border: none;
-  margin-left: 11px;
+	text-decoration: none;
+	display: block;
+	padding: 8px;
+	text-align: center;
+	color: white;
 }
 .login-popup__form-btn:hover {
   color: #83969f;
@@ -633,6 +648,20 @@ img {
 		margin-left: 0;
 	}
 }
+@-webkit-keyframes login {
+
+}
+@keyframes login {
+	0% {top: -500px;}
+	100% {top: 200px;}
+}
+@media (min-width: 1200px) {
+	.login-popup {
+		margin-left: 70px;
+		animation: login 2s linear;
+	}
+}
+
 .site-content {
   margin-top: 30px;
   /*border-top: 2px solid white;
@@ -665,6 +694,12 @@ img {
   margin-bottom: 10px;
   font-size: 15px;
   font-weight: bold;
+}
+@media (min-width: 1200px) {
+	.site-content {
+		margin-top: 0;
+		padding: 0 90px;
+	}
 }
 .wrapper {
 	height: 480px;
@@ -816,7 +851,11 @@ img {
 		font-size: 13px;
 	}
 }
-
+@media (min-width: 1200px) {
+	.advanced-topics {
+		padding: 0 90px;
+	}
+}
 
 
 /*Page footer*/
@@ -857,17 +896,44 @@ img {
 }
 .page-footer__copy-text {
   color: #fff;
-  font-size: 12px;
+  font-size: 17px;
+	line-height: 32px;
+	text-align: center;
 }
-.page-footer__copy-text  a {
-  text-decoration: none;
-  color: #000;
+.mpe-logo {
+	background-image: url(../img/HighSchoolCinemaEngineers.png);
+	width: 181px;
+	height: 47px;
 }
+.smpte-logo {
+	background-image: url(../img/smpte.png);
+	width: 88px;
+	height: 60px;
+	background-position-y: 2px;
+}
+.page-footer__copy-link {
+  font-size: 0;
+	background-size: 100%;
+	display: inline-block;
+	vertical-align: middle;;
+	background-repeat: no-repeat;
+	margin-left: 10px;
+	margin-right: 5px;
+}
+
 @media (min-width: 768px) {
   .page-footer__text {
     font-size: 15px;
   }
-.page-footer__links {
+  .page-footer__links {
     padding-left: 85px;
+  }
+}
+@media (min-width: 1200px) {
+	.page-footer__text {
+    margin-top: 30px;
+  }
+	.page-footer__links {
+    padding-left: 190px;
   }
 }
