@@ -716,12 +716,21 @@ img {
   display: none;
 }
 .inner-content {
-  font-size: 16px;
-  line-height: 30px;
-  font-weight: 100;
   padding: 0 80px;
   padding-top: 30px;
   padding-bottom: 30px;
+}
+.inner-content h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-top: -10px;
+  font-size: 1.5em;
+  color: #0e395f;
+}
+.inner-content p {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 100;
 }
 .inner-feedback {
   width: 260px;
@@ -731,6 +740,89 @@ img {
   height: 200px;
   border-radius: 0 26px;
   margin-top: 12px;
+}
+.terms-list {
+  
+}
+.terms-list__item {
+  padding: 0 20px;
+  background: rgb(246, 246, 246);
+  padding-top: 1px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-radius: 0 15px;
+  box-shadow: 0px 4px 1px rgba(22, 79, 128, 0.28);
+}
+.terms-list__item-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  padding-top: 10px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid grey;
+}
+.terms-list__item-title time {
+  font-size: 14px;
+}
+.terms-list__item-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(../img/speech-bubble.png) no-repeat;
+  background-size: 100%;
+}
+.terms-list__item-title h3 {
+  margin: 0;
+}
+.terms-list__item-title h3 a {
+  text-decoration: none;
+  color: #000;
+}
+.terms-list__item-author {
+  text-decoration: none;
+  color: #164f80;
+  padding: 10px;
+  display: block;
+}
+.terms-list__item-description {
+  padding-left: 30px;
+  padding-bottom: 10px;
+}
+.terms-list__item-description span {
+  font-size: 12px;
+}
+.terms-list__item-description p {
+  margin: 0;
+  margin-left:  20px;
+  font-size: 16px !important;
+}
+.terms-list__item-description p::before {
+  content: '';
+  width: 5px;
+  height: 30px;
+  background-color: rgba(22, 79, 128, 0.71);
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+.terms-list__item-btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.term-list__btn {
+  text-decoration: none;
+  color: #164f80;
+  transition: 1s all;
+  cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #164f80;
+  margin-bottom: 5px;
+}
+.term-list__btn:hover {
+  color: #de9e26;
+  border-bottom: none;
 }
 @media (min-width: 768px) {
 	.page-inner {
@@ -761,6 +853,13 @@ img {
 	.inner-feedback {
       width: 311px;
     }
+    .inner-content h2 {
+	  margin-top: -25px;
+	  font-size: 2em;
+    }
+    .terms-list__item-btns {
+	  flex-direction: row;
+	}
 }
 @media (min-width: 1200px) { 
 	.page-inner {
@@ -768,7 +867,9 @@ img {
 	}
 	.inner-content {
 	  width: 60%;
-	  font-size: 20px;
+	}
+	.inner-content p {
+      font-size: 20px;
 	}
 	.inner-nav {
 	  width: 30%;
@@ -908,7 +1009,7 @@ img {
 		/*justify-content: space-between;*/
 		background-color: white;
 		padding: 0;
-		margin-bottom: 50px;
+		/*margin-bottom: 50px;*/
 	}
 	.advanced-topics__item {
 		width: 33.33%;
