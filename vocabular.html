@@ -46,10 +46,19 @@
     </header>
     <main class="page-inner">
       <div class="inner-content">
-        <h2>Новые термины</h2>
-        <nav class="terms-list">
+        <h2>Словарь утвержденных терминов</h2>
+        <div class="glossary c-tabs no-js" id="tabs">
+          <ul class="glossary__nav  c-tabs-nav">
+            <li class="glossary__nav-item">
+              <a href="#" class="c-tabs-nav__link is-active">Оригинальный термин</a>
+            </li>
+            <li class="glossary__nav-item">
+              <a href="#" class="c-tabs-nav__link">Русскоязычный перевод термина</a>
+            </li>
+          </ul>
+         <!--  <div class="glossary__content"> -->
 
-          <div class="terms-list__item">
+            <div class="terms-list__item  c-tab is-active">
             <div class="terms-list__item-title">
               <h3><a href="">Effects track</a></h3>
               <time>26 June 2017</time>
@@ -60,43 +69,43 @@
               <span>Краткое описание</span>
               <p>Phonogram of noises, sound effects.</p>
             </div>
-            <div class="terms-list__item-description">
+            <!-- <div class="terms-list__item-description">
               <span>Русскоязычный перевод:</span>
               <p>Звуковой эффект — искусственно созданный или усиленный звук, или обработка звука, применяемый для подчеркивания художественного или иного содержания в кино, видео играх, музыке или других медиа.</p>
-            </div>
+            </div> -->
             <div class="terms-list__item-btns">
               <a href="#" class="term-list__btn">Предложить перевод</a>
               <a href="#" class="term-list__btn">Обсудить</a>
               <a href="#" class="term-list__btn">Проголосовать</a>
             </div>
-          </div>
-          <div class="terms-list__item">
+            </div>
+
+
+
+            <div class="terms-list__item  c-tab">
             <div class="terms-list__item-title">
-              <h3><a href="">Effects track</a></h3>
+              <h3><a href="">Эффективный перевод</a></h3>
               <time>26 June 2017</time>
               <a href="#"><span class="terms-list__item-icon"></span></a>
             </div>
-            <a class="terms-list__item-author" href="#">Unknown Racoon</a>
+            <a class="terms-list__item-author" href="#"> Racoon</a>
             <div class="terms-list__item-description">
               <span>Краткое описание</span>
               <p>Phonogram of noises, sound effects.</p>
             </div>
-            <div class="terms-list__item-description">
+            <!-- <div class="terms-list__item-description">
               <span>Русскоязычный перевод:</span>
-              <p>Звуковой эффект</p>
-            </div>
+              <p></p>
+            </div> -->
             <div class="terms-list__item-btns">
               <a href="#" class="term-list__btn">Предложить перевод</a>
               <a href="#" class="term-list__btn">Обсудить</a>
               <a href="#" class="term-list__btn">Проголосовать</a>
             </div>
-          </div>
+            </div>
 
-          <!-- <div class="terms-list__item"></div>
-          <div class="terms-list__item"></div>
-          <div class="terms-list__item"></div> -->
-
-        </nav>
+        <!-- </div> -->
+        </div>
       </div>
       <div class="inner-nav">
         <div class="inner-nav__wrapper">
@@ -237,7 +246,16 @@
         </div>
       </div>
     </footer>
-    <!-- <script src="js/jquery-3.2.1.min.js"></script>-->
+    <script src="js/script.js" type="text/javascript"></script>
+    <script>
+      var myTabs = tabs({
+        el: '#tabs',
+        tabNavigationLinks: '.c-tabs-nav__link',
+        tabContentContainers: '.c-tab'
+      });
+
+      myTabs.init();
+    </script>
     <script>
       var navMain = document.querySelector('.main-nav');
       var navToggle = document.querySelector('.main-nav__toggle');
@@ -253,31 +271,6 @@
           navMain.classList.remove('main-nav--opened');
         }
       });
-  </script>
-  <script>
-    var loginPopup = document.querySelector('.login-popup');
-    var loginCloseBtn = document.querySelector('.login-close');
-
-    loginCloseBtn.addEventListener('click', function() {
-      if (loginPopup.classList.contains('login-popup--closed')) {
-        loginPopup.classList.remove('login-popup--closed');
-        loginPopup.classList.add('login-popup--opened');
-      } else {
-        loginPopup.classList.add('login-popup--closed');
-        loginPopup.classList.remove('login-popup--opened');
-      }
-    });
-    var loginOpenBtn = document.querySelector('.popup-login__btn');
-
-    loginOpenBtn.addEventListener('click', function() {
-      if (loginPopup.classList.contains('login-popup--closed')) {
-        loginPopup.classList.remove('login-popup--closed');
-        loginPopup.classList.add('login-popup--opened');
-      } else {
-        loginPopup.classList.add('login-popup--closed');
-        loginPopup.classList.remove('login-popup--opened');
-      }
-    });
   </script>
   </body>
 </html>
