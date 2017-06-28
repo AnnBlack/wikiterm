@@ -843,6 +843,15 @@ img {
   color: #de9e26;
   border-bottom: none;
 }
+.terms__author {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 100;
+}
+.terms__author a {
+  display: inline-block;
+  color: #164f80;
+}
 .glossary {
 
 }
@@ -1207,7 +1216,6 @@ img {
 	padding-left: 20px;
 	padding-right: 20px;
 	border-radius: 20px;
-
 }
 .add-term label {
 	display: block;
@@ -1230,11 +1238,53 @@ img {
   border: 1px dotted azure;
   border-radius: 8px;
   width: 100%;
-  background-image: linear-gradient(to top, #164f801a, #ebebeb);
+  background-image: linear-gradient(to top, #e3e3e3, #ebebeb);
+  margin-bottom: 30px;
 }
 .add-term input[type="file"] {
   margin-bottom: 30px;
 }
+.inner-form {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: 1px dotted grey;
+}
+.inner-form--closed {
+  display: none;
+}
+.inner-form--opened {
+  display: block;
+}
+.breadcrumbs__nav {
+  margin: 0;
+  padding: 0;
+}
+.breadcrumbs__nav-item {
+  list-style: none;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+  font-size: 14px;
+}
+.breadcrumbs__nav-item:first-child::after {
+  content: '→';
+  width: 10px;
+  height: 10px;
+  font-size: 14px;
+  padding-left: 15px;
+}
+.breadcrumbs__nav-item:last-child {
+  color: grey;
+}
+.breadcrumbs__nav-item a {
+  color: #164F80;
+}
+.breadcrumbs__nav-item a:hover {
+	text-decoration: none;
+  color: #000;
+}
+
+
 
 /*Page footer*/
 .page-footer__text {

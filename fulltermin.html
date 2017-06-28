@@ -1,0 +1,294 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>Wikiterm</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="page-header  page-header--opacity">
+    <div class="page-header__wrapper">
+      <div class="page-header__logo">
+        <a href="index.html"><img src="img/wikiterm1.svg" alt="wikiterm-logo" /></a>
+      </div>
+      <nav class="main-nav  main-nav--closed">
+        <button class="main-nav__toggle"></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__items">
+            <li class="main-nav__item  main-nav__item--active">
+              <a href="newterm.html">Новые термины</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">В обсуждении</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="vocabular.html">Словарь</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="new.html">О проекте</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="addnew.html">Добавить термин</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Вход</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <form class="search-form">
+        <button type="submit" class="search-btn">Поиск</button>
+        <input type="search" value="Search" placeholder="Search...">
+      </form>
+    </div>
+    </header>
+    <main class="page-inner">
+      <div class="inner-content">
+
+        <ul class="breadcrumbs__nav">
+          <li class="breadcrumbs__nav-item"><a href="newterm.html">Новые термины</a></li>
+          <li class="breadcrumbs__nav-item  non-active">Security Entities</li>
+        </ul>
+
+      <h3>Security Entities</h3>
+      <nav class="terms-list">
+
+          <div class="terms-list__item">
+            <div class="terms-list__item-title">
+              <div class="terms__author">Перевод предложен <time>26 June 2017</time> пользователем<a class="terms-list__item-author" href="#">Unknown Racoon</a></div>
+            </div>
+            
+            <div class="terms-list__item-description">
+              <span>Оригинальное сокращение:</span>
+              <p>SEs</p>
+            </div>
+            <div class="terms-list__item-description">
+              <span>Краткое описание:</span>
+              <p>Security Entities (SE) are characterized by executing in a narrowly defined security function, and having a role defined for them in a digital certificate with which they are associated.</p>
+            </div>
+            <div class="terms-list__item-description">
+              <span>Подробное описание:</span>
+              <p>The seven defined SE(s) are as follows:</p>
+              <ol>
+                <li>
+                  Screen Management System (SMS) – The SMS is not a secure device and therefore is not trusted to handle Security Data (keys). The SMS is trusted to send/receive commands to/from the auditorium SM, such as those required to prepare an equipment suite for playback.
+                </li>
+                <li>
+                  Security Manager (SM) – Responsible for Security Data (keys) and Digital Rights Management within a defined sphere of control
+                </li>
+                <li>
+                  Media Decryptor (MD) – Transforms encrypted (image, sound, etc.) content to its original plaintext form
+                </li>
+                <li>
+                  Link Encryptor (LE) – Encrypts content transmission over links between physical devices in exhibition
+                </li>
+                <li>
+                  Link Decryptor (LD) – Decrypts content encrypted by a Link Encryptor (LE)
+                </li>
+                <li>
+                  Forensic Marker (FM) – Inserts markings (data indicating time, date and location of playback) in bothimage and audio essence in realtime at time of playback (i.e., a fingerprint or watermark inserter) DCI Digital Cinema System Specification v. 1.2 with Errata as of 30 August 2012 Incorporated Page 85
+                </li>
+                <li>
+                  Secure Processing Block (SPB) – A Security Entity (SE) whose security function is to provide physical protection to other SEs contained within it. A Media Block is an example of a SPB. These specifications define two types of SPB physical protection perimeters
+                </li>
+              </ol>
+            </div>
+            <div class="terms-list__item-description">
+              <span>Срок окончания обсуждения: </span>
+              <p>1 июля 2017 г. 16:29</p>
+            </div>
+            <div class="terms-list__item-btns">
+              <a href="#" class="term-list__btn  show-popup__btn">Предложить перевод</a>
+            </div>
+            <form class="add-term  inner-form  inner-form--closed">
+              <label for="name">Русскоязычный перевод термина</label>
+              <input type="text" name="name" id="name" placeholder="fill in English" required>
+              <label for="abr">Русскоязычное сокращение термина</label>
+              <input type="text" name="abr" id="abr" required >
+              <label for="synonyms">Синонимы (на русском языке)</label>
+              <input type="text" name="synonyms" id="synonyms" required >
+              <label for="description">Краткое описание (на русском языке)</label>
+              <input type="text" name="description" id="description" placeholder="fill in English" required>
+              <label for="fulldescription">Подробное описание (на русском языке)</label>
+              <input type="textarea" name="fulldescription" id="fulldescription" required>
+              <input type="submit" href="#" class="login-popup__form-btn" value="Добавить">
+              <!-- <a href="#" class="login-popup__form-btn">Добавить термин</a> -->
+            </form>
+          </div>
+        </nav>
+        
+      </div>
+      <div class="inner-nav">
+        <div class="inner-nav__wrapper">
+          <h2 class="site-content__title"><a href="#">Новые термины</a></h2>
+          <div class="site-content__item">
+            <p class="site-content__item-title">Internet Engineering Task Force</p>
+            <a href="" class="site-content__item-link">Подробнее...</a>
+            <p class="site-content__item-text">Компания «Невафильм», «Высшая
+              школа киноинженеров» и школа дубляжа «ЗА КАДРОМ» предлагают
+              уникальную возможность попробовать</p>
+            <time class="site-content__item-date">October 8th, 2014</time>
+          </div>
+          <div class="site-content__item">
+            <p class="site-content__item-title">Security Entities (SE) are characterized by executing in a narrowly defined </p>
+            <a href="" class="site-content__item-link">Подробнее...</a>
+            <p class="site-content__item-text">Компания «Невафильм», «Высшая
+              школа киноинженеров» и школа дубляжа «ЗА КАДРОМ» предлагают
+              уникальную возможность попробовать</p>
+            <time class="site-content__item-date">October 1th, 2014</time>
+          </div>
+          <div class="site-content__item">
+            <p class="site-content__item-title">Internet Engineering Task Force</p>
+            <a href="" class="site-content__item-link">Подробнее...</a>
+            <p class="site-content__item-text">Компания «Невафильм», «Высшая
+              школа киноинженеров» и школа дубляжа «ЗА КАДРОМ» предлагают
+              уникальную возможность попробовать</p>
+            <time class="site-content__item-date">October 5th, 2014</time>
+          </div>
+        </div>
+
+
+        <div class="inner-nav__wrapper">
+          <h2 class="site-content__title"><a href="#">В обсуждении</a></h2>
+          <div class="site-content__item">
+            <p class="site-content__item-title">Security Entities</p>
+            <a href="" class="site-content__item-link">Подробнее...</a>
+            <p class="site-content__item-text">Компания «Невафильм», «Высшая
+              школа киноинженеров» и школа дубляжа «ЗА КАДРОМ» предлагают
+              уникальную возможность попробовать</p>
+            <time class="site-content__item-date">October 8th, 2014</time>
+          </div>
+          <div class="site-content__item">
+            <p class="site-content__item-title">International Organization for Standardization</p>
+            <a href="" class="site-content__item-link">Подробнее...</a>
+            <p class="site-content__item-text">Компания «Невафильм», «Высшая
+              школа киноинженеров» и школа дубляжа «ЗА КАДРОМ» предлагают
+              уникальную возможность попробовать</p>
+            <time class="site-content__item-date">September 10th, 2014</time>
+          </div>
+          <div class="site-content__item">
+            <p class="site-content__item-title">Internet Assigned Numbers Authority</p>
+            <a href="" class="site-content__item-link">Подробнее...</a>
+            <p class="site-content__item-text">Компания «Невафильм», «Высшая
+              школа киноинженеров» и школа дубляжа «ЗА КАДРОМ» предлагают
+              уникальную возможность попробовать</p>
+            <time class="site-content__item-date">October 8th, 2014</time>
+          </div>
+        </div>
+
+
+        <div class="inner-nav__wrapper">
+          <h2 class="site-content__title"><a href="#">В разработке</a></h2>
+          <div class="site-content__item">
+            <!-- <p class="site-content__item-title">Screen Management System</p>
+            <a href="" class="site-content__item-link">Подробнее...</a>
+            <p class="site-content__item-text">Компания «Невафильм», «Высшая
+              школа киноинженеров» и школа дубляжа «ЗА КАДРОМ» предлагают
+              уникальную возможность попробовать</p>
+            <time class="site-content__item-date">October 8th, 2014</time> -->
+          </div>
+          <div class="site-content__item">
+            <!-- <p class="site-content__item-title">Theater Management System</p>
+            <a href="" class="site-content__item-link">Подробнее...</a>
+            <p class="site-content__item-text">Компания «Невафильм», «Высшая
+              школа киноинженеров» и школа дубляжа «ЗА КАДРОМ» предлагают
+              уникальную возможность попробовать</p>
+            <time class="site-content__item-date">October 8th, 2014</time> -->
+          </div>
+          <div class="site-content__item">
+            <!-- <p class="site-content__item-title">Internet Engineering Task Force</p>
+            <a href="" class="site-content__item-link">Подробнее...</a>
+            <p class="site-content__item-text">Компания «Невафильм», «Высшая
+              школа киноинженеров» и школа дубляжа «ЗА КАДРОМ» предлагают
+              уникальную возможность попробовать</p>
+            <time class="site-content__item-date">October 8th, 2014</time> -->
+          </div>
+        </div>
+
+    </div> <!--site-content-->
+  </main>
+  <div class="advanced-topics">
+      <div class="advanced-topics__item">
+        <h3 class="advanced-topics__item-title"><a href="">Screen Management System - Система управления кинозалом</a></h3>
+        <p class="advanced-topics__item-text">
+          Цифровые исходные материалы DSM, mастер цифровой кинокопии DCDM. Изображение
+        </p>
+      </div>
+      <div class="advanced-topics__item">
+        <h3 class="advanced-topics__item-title"><a href="">Theater Management System - Система управления кинотеатром</a></h3>
+        <p class="advanced-topics__item-text">
+          Цифровые исходные материалы DSM, mастер цифровой кинокопии DCDM. Изображение
+        </p>
+      </div>
+      <div class="advanced-topics__item">
+        <h3 class="advanced-topics__item-title"><a href="">Theater Management System - Система управления кинотеатром</a></h3>
+        <p class="advanced-topics__item-text">
+          Цифровые исходные материалы DSM, mастер цифровой кинокопии DCDM. Изображение
+        </p>
+      </div>
+      <div class="advanced-topics__item">
+        <h3 class="advanced-topics__item-title"><a href="">Screen Management System - Система управления кинозалом</a></h3>
+        <p class="advanced-topics__item-text">
+          Цифровые исходные материалы DSM, mастер цифровой кинокопии DCDM. Изображение
+        </p>
+      </div>
+      <div class="advanced-topics__item">
+        <h3 class="advanced-topics__item-title"><a href="">Theater Management System - Система управления кинотеатром</a></h3>
+        <p class="advanced-topics__item-text">
+          Цифровые исходные материалы DSM, mастер цифровой кинокопии DCDM. Изображение
+        </p>
+      </div>
+    </div>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__text">
+          Web-сервис для создания, обсуждения и утверждения путем голосования
+          профессиональным сообществом переводов отраслевых англоязычных
+          терминов на русский язык.
+        </div>
+        <div class="page-footer__links">
+          <a href="#"><span class="page-footer__links-icon  facebook"></span></a>
+          <a href="#"><span class="page-footer__links-icon  twitter"></span></a>
+          <a href="#"><span class="page-footer__links-icon  linkedin"></span></a>
+        </div>
+        <div class="page-footer__copy">
+          <p class="page-footer__copy-text">Совместный проект <a href="/" class="page-footer__copy-link  mpe-logo">Высшей Школы Киноинженеров</a>&nbsp;<a href="/" class="page-footer__copy-link  smpte-logo">российской секции SMPTE</a></p>
+          <p class="page-footer__copy-text">&#169; 2016-2017</p>
+        </div>
+      </div>
+    </footer>
+    <!-- <script src="js/jquery-3.2.1.min.js"></script>-->
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+  </script>
+  <script type="text/javascript">
+    var formPopup = document.querySelector('.inner-form');
+    var showPopup = document.querySelector('.show-popup__btn');
+
+    showPopup.addEventListener('click', function() {
+      if (formPopup.classList.contains('inner-form--closed')) {
+        formPopup.classList.remove('inner-form--closed');
+        formPopup.classList.add('inner-form--opened');
+      } else {
+        formPopup.classList.add('inner-form--closed');
+        formPopup.classList.remove('inner-form--opened');
+      }
+    });
+  </script>
+  </body>
+</html>
