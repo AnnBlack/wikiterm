@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/1.12.4/jquery.min.js"></script>
   </head>
   <body>
     <header class="page-header  page-header--opacity">
@@ -33,7 +34,7 @@
               <a href="addnew.html">Добавить термин</a>
             </li>
             <li class="main-nav__item">
-              <a href="#">Вход</a>
+              <a href="login.html">Вход</a>
             </li>
           </ul>
         </div>
@@ -47,11 +48,11 @@
     <main class="page-inner">
       <div class="inner-content">
         <h2>Новые термины</h2>
-        <nav class="terms-list">
 
+        <nav class="terms-list">
           <div class="terms-list__item">
             <div class="terms-list__item-title">
-              <h3><a href="">Effects track</a></h3>
+              <h3><a href="fulltermin.html">Effects track</a></h3>
               <time>26 June 2017</time>
               <a href="#"><span class="terms-list__item-icon"></span></a>
             </div>
@@ -72,7 +73,7 @@
           </div>
           <div class="terms-list__item">
             <div class="terms-list__item-title">
-              <h3><a href="">Effects track</a></h3>
+              <h3><a href="fulltermin.html">Effects track</a></h3>
               <time>26 June 2017</time>
               <a href="#"><span class="terms-list__item-icon"></span></a>
             </div>
@@ -91,11 +92,30 @@
               <a href="#" class="term-list__btn">Проголосовать</a>
             </div>
           </div>
-
+          <div class="terms-list__item">
+            <div class="terms-list__item-title">
+              <h3><a href="fulltermin.html">Effects track</a></h3>
+              <time>26 June 2017</time>
+              <a href="#"><span class="terms-list__item-icon"></span></a>
+            </div>
+            <a class="terms-list__item-author" href="#">Unknown Racoon</a>
+            <div class="terms-list__item-description">
+              <span>Краткое описание</span>
+              <p>Phonogram of noises, sound effects.</p>
+            </div>
+            <div class="terms-list__item-description">
+              <span>Русскоязычный перевод:</span>
+              <p>Звуковой эффект</p>
+            </div>
+            <div class="terms-list__item-btns">
+              <a href="#" class="term-list__btn">Предложить перевод</a>
+              <a href="#" class="term-list__btn">Обсудить</a>
+              <a href="#" class="term-list__btn">Проголосовать</a>
+            </div>
+          </div>
           <!-- <div class="terms-list__item"></div>
           <div class="terms-list__item"></div>
           <div class="terms-list__item"></div> -->
-
         </nav>
       </div>
       <div class="inner-nav">
@@ -253,31 +273,6 @@
           navMain.classList.remove('main-nav--opened');
         }
       });
-  </script>
-  <script>
-    var loginPopup = document.querySelector('.login-popup');
-    var loginCloseBtn = document.querySelector('.login-close');
-
-    loginCloseBtn.addEventListener('click', function() {
-      if (loginPopup.classList.contains('login-popup--closed')) {
-        loginPopup.classList.remove('login-popup--closed');
-        loginPopup.classList.add('login-popup--opened');
-      } else {
-        loginPopup.classList.add('login-popup--closed');
-        loginPopup.classList.remove('login-popup--opened');
-      }
-    });
-    var loginOpenBtn = document.querySelector('.popup-login__btn');
-
-    loginOpenBtn.addEventListener('click', function() {
-      if (loginPopup.classList.contains('login-popup--closed')) {
-        loginPopup.classList.remove('login-popup--closed');
-        loginPopup.classList.add('login-popup--opened');
-      } else {
-        loginPopup.classList.add('login-popup--closed');
-        loginPopup.classList.remove('login-popup--opened');
-      }
-    });
   </script>
   </body>
 </html>
